@@ -45,6 +45,8 @@ import com.android.settings.security.SecuritySettings;
 import com.android.settings.system.SystemDashboardFragment;
 import com.android.settingslib.drawer.CategoryKey;
 
+import com.zen.hub.ZenHub;
+
 import java.util.Map;
 
 /**
@@ -116,6 +118,10 @@ public class DashboardFragmentRegistry {
                 CategoryKey.CATEGORY_MY_DEVICE_INFO);
         PARENT_TO_CATEGORY_KEY_MAP.put(BatterySaverSettings.class.getName(),
                 CategoryKey.CATEGORY_BATTERY_SAVER_SETTINGS);
+        PARENT_TO_CATEGORY_KEY_MAP.put(SmartBatterySettings.class.getName(),
+                CategoryKey.CATEGORY_SMART_BATTERY_SETTINGS);
+        PARENT_TO_CATEGORY_KEY_MAP.put(ZenHub.class.getName(),
+                CategoryKey.CATEGORY_SYSTEM_DEVELOPMENT);
 
         CATEGORY_KEY_TO_PARENT_MAP = new ArrayMap<>(PARENT_TO_CATEGORY_KEY_MAP.size());
 

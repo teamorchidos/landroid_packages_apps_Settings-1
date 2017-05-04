@@ -148,6 +148,8 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.wifi.savedaccesspoints.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
+import com.zen.hub.ZenHub;
+ 
 public class SettingsGateway {
 
     /**
@@ -283,7 +285,14 @@ public class SettingsGateway {
             BatterySaverScheduleSettings.class.getName(),
             MobileNetworkListFragment.class.getName(),
             GlobalActionsPanelSettings.class.getName(),
-            DarkModeSettingsFragment.class.getName()
+            DeviceControlsSettings.class.getName(),
+            DarkModeSettingsFragment.class.getName(),
+            BugReportHandlerPicker.class.getName(),
+            GestureNavigationSettingsFragment.class.getName(),
+            InteractAcrossProfilesSettings.class.getName(),
+            InteractAcrossProfilesDetails.class.getName(),
+            MediaControlsSettings.class.getName(),
+            ZenHub.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -322,5 +331,6 @@ public class SettingsGateway {
             Settings.MyDeviceInfoActivity.class.getName(),
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
+            Settings.ZenHubActivity.class.getName(),
     };
 }
