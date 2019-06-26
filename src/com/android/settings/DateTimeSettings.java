@@ -55,8 +55,8 @@ import static com.android.settingslib.RestrictedLockUtils.EnforcedAdmin;
 
 public class DateTimeSettings extends SettingsPreferenceFragment
         implements OnTimeSetListener, OnDateSetListener, OnPreferenceChangeListener, Indexable {
-
-    private static final String HOURS_12 = "12";
+	
+	private static final String HOURS_12 = "12";
     private static final String HOURS_24 = "24";
 
     // Used for showing the current date format, which looks like "12/31/2010", "2010/12/13", etc.
@@ -64,7 +64,6 @@ public class DateTimeSettings extends SettingsPreferenceFragment
     private Calendar mDummyDate;
 
     private static final String KEY_AUTO_TIME = "auto_time";
-    private static final String KEY_AUTO_TIME_ZONE = "auto_zone";
 
     private static final int DIALOG_DATEPICKER = 0;
     private static final int DIALOG_TIMEPICKER = 1;
@@ -78,10 +77,9 @@ public class DateTimeSettings extends SettingsPreferenceFragment
     private RestrictedSwitchPreference mAutoTimePref;
     private Preference mTimePref;
     private Preference mTime24Pref;
-    private SwitchPreference mAutoTimeZonePref;
     private Preference mTimeZone;
     private Preference mDatePref;
-
+	
     @Override
     protected int getMetricsCategory() {
         return MetricsEvent.DATE_TIME;
@@ -92,15 +90,14 @@ public class DateTimeSettings extends SettingsPreferenceFragment
         super.onCreate(icicle);
 
         addPreferencesFromResource(R.xml.date_time_prefs);
-
+		
         initUI();
     }
 
     private void initUI() {
         boolean autoTimeEnabled = getAutoState(Settings.Global.AUTO_TIME);
-        boolean autoTimeZoneEnabled = getAutoState(Settings.Global.AUTO_TIME_ZONE);
 
-        mAutoTimePref = (RestrictedSwitchPreference) findPreference(KEY_AUTO_TIME);
+		mAutoTimePref = (RestrictedSwitchPreference) findPreference(KEY_AUTO_TIME);
         mAutoTimePref.setOnPreferenceChangeListener(this);
         EnforcedAdmin admin = RestrictedLockUtils.checkIfAutoTimeRequired(getActivity());
         mAutoTimePref.setDisabledByAdmin(admin);
@@ -113,16 +110,7 @@ public class DateTimeSettings extends SettingsPreferenceFragment
         // If device admin requires auto time device policy manager will set
         // Settings.Global.AUTO_TIME to true. Note that this app listens to that change.
         mAutoTimePref.setChecked(autoTimeEnabled);
-        mAutoTimeZonePref = (SwitchPreference) findPreference(KEY_AUTO_TIME_ZONE);
-        mAutoTimeZonePref.setOnPreferenceChangeListener(this);
-        // Override auto-timezone if it's a wifi-only device or if we're still in setup wizard.
-        // TODO: Remove the wifiOnly test when auto-timezone is implemented based on wifi-location.
-        if (Utils.isWifiOnly(getActivity()) || isFirstRun) {
-            getPreferenceScreen().removePreference(mAutoTimeZonePref);
-            autoTimeZoneEnabled = false;
-        }
-        mAutoTimeZonePref.setChecked(autoTimeZoneEnabled);
-
+      
         mTimePref = findPreference("time");
         mTime24Pref = findPreference("24 hour");
         mTimeZone = findPreference("timezone");
@@ -133,7 +121,8 @@ public class DateTimeSettings extends SettingsPreferenceFragment
 
         mTimePref.setEnabled(!autoTimeEnabled);
         mDatePref.setEnabled(!autoTimeEnabled);
-        mTimeZone.setEnabled(!autoTimeZoneEnabled);
+        mTimeZone.setEnabled(!autoTimeEnabled);
+	
     }
 
     @Override
@@ -205,13 +194,19 @@ public class DateTimeSettings extends SettingsPreferenceFragment
             boolean autoEnabled = (Boolean) newValue;
             Settings.Global.putInt(getContentResolver(), Settings.Global.AUTO_TIME,
                     autoEnabled ? 1 : 0);
-            mTimePref.setEnabled(!autoEnabled);
-            mDatePref.setEnabled(!autoEnabled);
-        } else if (preference.getKey().equals(KEY_AUTO_TIME_ZONE)) {
-            boolean autoZoneEnabled = (Boolean) newValue;
-            Settings.Global.putInt(
-                    getContentResolver(), Settings.Global.AUTO_TIME_ZONE, autoZoneEnabled ? 1 : 0);
-            mTimeZone.setEnabled(!autoZoneEnabled);
+			if (autoEnabled){
+				getPreferenceScreen().removePreference(mTimePref);
+				getPreferenceScreen().removePreference(mDatePref);
+			} else {
+				getPreferenceScreen().addPreference(mTimePref);
+				getPreferenceScreen().addPreference(mDatePref);
+			}
+			
+			if (!Utils.isWifiOnly(getActivity())){
+				Settings.Global.putInt(getContentResolver(), Settings.Global.AUTO_TIME_ZONE,
+                    autoEnabled ? 1 : 0);
+				mTimeZone.setEnabled(!autoEnabled);
+			}
         }
         return true;
     }
