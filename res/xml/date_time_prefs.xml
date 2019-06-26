@@ -27,12 +27,6 @@
         settings:restrictedSwitchSummary="@string/enabled_by_admin"
         />
 
-    <SwitchPreference android:key="auto_zone"
-        android:title="@string/zone_auto"
-        android:summaryOn="@string/zone_auto_summaryOn"
-        android:summaryOff="@string/zone_auto_summaryOff"
-        />
-
     <Preference android:key="date"
         android:title="@string/date_time_set_date"
         android:summary="03/10/2008"
