@@ -43,6 +43,7 @@
     <string name="app_ops_summaries_access_notifications">juurdepääsu teavitused</string>
     <string name="app_ops_summaries_activate_vpn">Aktiveeri VPN</string>
     <string name="app_ops_summaries_app_start_foreground">installimata avatava rakenduse käivitamine esiplaanil</string>
+    <string name="app_ops_summaries_audio_accessibility_volume">abistava heli tugevus</string>
     <string name="app_ops_summaries_auto_start">sisselülitamisel käivitamine</string>
     <string name="app_ops_summaries_bind_accessibility_service">juurdepääsetavusteenuse ühendamine</string>
     <string name="app_ops_summaries_bluetooth_scan">Bluetoothi skannimine</string>
@@ -67,6 +68,7 @@
     <string name="app_ops_summaries_monitor_high_power_location">Jälgi eriti täpaet asukohta</string>
     <string name="app_ops_summaries_monitor_location">jälgi asukohta</string>
     <string name="app_ops_summaries_mute_unmute_microphone">Mikrofoni heli välja/sisse</string>
+    <string name="app_ops_summaries_neighboring_cells">külgnevad jaamad</string>
     <string name="app_ops_summaries_phone_calls">telefonikõnedele vastamine</string>
     <string name="app_ops_summaries_picture_in_picture">pilt-pildis režiimi kasutamine</string>
     <string name="app_ops_summaries_play_audio">mängi heli</string>
@@ -82,6 +84,7 @@
     <string name="app_ops_summaries_receive_emergency_broadcast">hädaolukorra teatiste vastuvõtmine</string>
     <string name="app_ops_summaries_receive_sms">Võta vastu SMS</string>
     <string name="app_ops_summaries_record_audio">salvesta heli</string>
+    <string name="app_ops_summaries_request_delete_packages">pakettide eemaldamise taotlemine</string>
     <string name="app_ops_summaries_run_any_in_background">mistahes taustal käitamine</string>
     <string name="app_ops_summaries_scan_wifi">Wi-Fi võrkude otsimine</string>
     <string name="app_ops_summaries_send_mms">MMS sõnumi saatmine</string>
@@ -94,7 +97,7 @@
     <string name="app_ops_summaries_turn_on_screen">ekraani sisselülitamine</string>
     <string name="app_ops_summaries_use_alarm_volume">äratuse helitugevuse muutmine</string>
     <string name="app_ops_summaries_use_audio_focus">helifookuse muutmine</string>
-    <string name="app_ops_summaries_use_bluetooth_volume">Bluetooth\'i helitugevuse muutmine</string>
+    <string name="app_ops_summaries_use_bluetooth_volume">Bluetoothi helitugevuse muutmine</string>
     <string name="app_ops_summaries_use_master_volume">üldise helitugevuse muutmine</string>
     <string name="app_ops_summaries_use_media_buttons">meedianuppude kasutamine</string>
     <string name="app_ops_summaries_use_media_volume">meedia helitugevuse muutmine</string>
@@ -110,6 +113,7 @@
     <string name="app_ops_labels_access_notifications">juurdepääsu teavitused</string>
     <string name="app_ops_labels_activate_vpn">Aktiveeri VPN</string>
     <string name="app_ops_labels_app_start_foreground">Installimata avatava rakenduse käivitamine esiplaanil</string>
+    <string name="app_ops_labels_audio_accessibility_volume">Abistava heli tugevus</string>
     <string name="app_ops_labels_auto_start">Sisselülitamisel käivitamine</string>
     <string name="app_ops_labels_bind_accessibility_service">Juurdepääsetavusteenuse ühendamine</string>
     <string name="app_ops_labels_bluetooth_scan">Bluetoothi skannimine</string>
@@ -130,6 +134,7 @@
     <string name="app_ops_labels_modify_contacts">Muuda kontakte</string>
     <string name="app_ops_labels_modify_settings">Muuda seadeid</string>
     <string name="app_ops_labels_mute_unmute_microphone">Mikrofoni heli välja/sisse</string>
+    <string name="app_ops_labels_neighboring_cells">Külgnevad jaamad</string>
     <string name="app_ops_labels_phone_calls">Telefonikõnedele vastamine</string>
     <string name="app_ops_labels_picture_in_picture">Pilt-pildis režiimi kasutamine</string>
     <string name="app_ops_labels_play_audio">Mängi heli</string>
@@ -144,6 +149,7 @@
     <string name="app_ops_labels_receive_emergency_broadcast">Hädaolukorra teatiste vastuvõtmine</string>
     <string name="app_ops_labels_receive_sms">Võta vastu SMS</string>
     <string name="app_ops_labels_record_audio">Salvesta heli</string>
+    <string name="app_ops_labels_request_delete_packages">Pakettide eemaldamise taotlemine</string>
     <string name="app_ops_labels_run_any_in_background">Mistahes taustal käitamine</string>
     <string name="app_ops_labels_scan_wifi">Wi-Fi võrkude otsimine</string>
     <string name="app_ops_labels_send_mms">MMS sõnumi saatmine</string>
@@ -201,6 +207,8 @@
     <string name="sim_enabler_both_inactive">Ei saa keelata kõiki SIM-kaarte</string>
     <string name="data_usage_app_restrict_data">Mobiilne andmeside</string>
     <string name="data_usage_app_restrict_data_summary">Luba mobiilse andmeside kasutus</string>
+    <string name="data_usage_app_restrict_vpn">VPNi andmeside</string>
+    <string name="data_usage_app_restrict_vpn_summary">Lubage VPNi andmeside kasutus</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi andmeside</string>
     <string name="data_usage_app_restrict_wifi_summary">Luba Wi\u2011Fi andmeside kasutus</string>
     <string name="unlock_scramble_pin_layout_title">Segatud paigutus</string>
@@ -224,4 +232,9 @@
     <string name="touchscreen_hovering_summary">Lubab hõljuda ekraani kohal nagu hiirega veebilehitsejas, kaugtöölaual jne</string>
     <string name="directly_show_lock">Vahetu avamine</string>
     <string name="directly_show_lock_summary">Jäta vahele ekraani lahtilukustamiseks vajalik viibe ning alusta kohe koodi sisestamist</string>
+    <string name="open_lockscreen_tuner">Muuda otseteid</string>
+    <string name="location_mode_battery_saving_title">Aku säästmise režiim</string>
+    <string name="location_mode_battery_saving_summary">Kasutage asukoha määramiseks ainult Wi\u2011Fit, Bluetoothi või mobiilsidevõrke (vähem täpne)</string>
+    <string name="tethering_allow_vpn_upstreams_title">Luba klientidel kasutada VPN-e</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Luba kuumkoha klientidel kasutada selle seadme VPN-ühendusi ülesvoolu ühenduvuseks</string>
 </resources>

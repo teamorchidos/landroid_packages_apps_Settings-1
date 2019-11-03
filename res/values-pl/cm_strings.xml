@@ -102,6 +102,7 @@
     <string name="app_ops_summaries_run_in_background">uruchomione w tle</string>
     <string name="app_ops_summaries_scan_wifi">skanowanie sieci Wi-Fi</string>
     <string name="app_ops_summaries_send_sms">wysyłanie SMS-ów</string>
+    <string name="app_ops_summaries_start_at_bootup">uruchom podczas włączania urządzenia</string>
     <string name="app_ops_summaries_start_foreground">uruchamianie na pierwszym planie</string>
     <string name="app_ops_summaries_su">dostęp do roota</string>
     <string name="app_ops_summaries_toast_window">wyświetla wyskakujące powiadomienia</string>
@@ -185,6 +186,7 @@
     <string name="app_ops_labels_send_sms">Wysyłanie SMS-ów</string>
     <string name="app_ops_labels_start_at_bootup">Uruchom podczas włączania urządzenia</string>
     <string name="app_ops_labels_start_foreground">Uruchom na pierwszym planie</string>
+    <string name="app_ops_labels_su">Uzyskaj dostęp do roota</string>
     <string name="app_ops_labels_toast_window">Wyświetlanie wyskakujących powiadomień</string>
     <string name="app_ops_labels_toggle_bluetooth">Przełącz Bluetooth</string>
     <string name="app_ops_labels_toggle_mobile_data">Przełączanie transmisji danych</string>
@@ -205,6 +207,7 @@
     <string name="app_ops_labels_use_voice_volume">Kontroluj głośność połączenia głosowego</string>
     <string name="app_ops_labels_wifi_change">Zmień stan Wi-Fi</string>
     <string name="app_ops_labels_write_external_storage">Zapis w pamięci zewnętrznej</string>
+    <string name="app_ops_labels_write_mms">Napisz wiadomość MMS</string>
     <string name="app_ops_labels_write_sms">Zapis SMS</string>
     <string name="lock_settings_picker_pattern_size_message">Wybierz rozmiar wzoru</string>
     <string name="lockpattern_settings_enable_error_path_title">Pokazuj błędny wzór</string>
@@ -261,6 +264,7 @@
     <string name="sub_deactivate_failed">Dezaktywacja nie powiodła się.</string>
     <string name="data_usage_app_restrict_data">Komórkowa transmisja danych</string>
     <string name="data_usage_app_restrict_data_summary">Włącz użycie danych komórkowych</string>
+    <string name="data_usage_app_restrict_vpn">Dane VPN</string>
     <string name="data_usage_app_restrict_wifi">Dane Wi-Fi</string>
     <string name="data_usage_app_restrict_wifi_summary">Włącz użycie danych Wi\u2011Fi</string>
     <string name="unlock_scramble_pin_layout_title">Pomieszany układ</string>
@@ -286,4 +290,16 @@
     <string name="touchscreen_hovering_summary">Pozwala na wskazywanie na ekranie jak myszką w przeglądarce internetowej, pulpicie zdalnym itd.</string>
     <string name="directly_show_lock">Bezpośrednie odblokowanie</string>
     <string name="directly_show_lock_summary">Pomiń przesunięcie po ekranie i natychmiast umożliw wprowadzanie kodu</string>
+    <string name="open_lockscreen_tuner">Zmień skróty</string>
+    <string name="location_mode_battery_saving_title">Tryb oszczędzania baterii</string>
+    <string name="location_mode_battery_saving_summary">Używaj tylko Wi\u2011Fi, Bluetooth lub sieci mobilnej do lokalizacji (mniej dokładne)</string>
+    <string name="app_notification_sound_timeout_title">Minimalny czas między dźwiękami powiadomień</string>
+    <string name="app_notification_sound_timeout_summary_template">Zezwól na dźwięki i wibracje, nie więcej niż jeden raz co każde <xliff:g id="duration">%1$s </xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">Brak ograniczeń</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 sekund</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 sekund</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 min</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 min</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 min</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 minut</string>
 </resources>

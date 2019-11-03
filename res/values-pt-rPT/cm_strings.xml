@@ -20,8 +20,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="advanced_reboot_title">Reinicialização avançada</string>
     <string name="advanced_reboot_summary">Quando desbloqueado, incluir opções no menu ligar/desligar para reiniciar em modo de recuperação ou bootloader</string>
-    <string name="app_ops_permissions_allowed">Permitido</string>
-    <string name="app_ops_permissions_ignored">Ignorado</string>
+    <string name="app_ops_permissions_allowed">Permitir</string>
+    <string name="app_ops_permissions_ignored">Ignorar</string>
     <string name="app_ops_permissions_always_ask">Perguntar sempre</string>
     <string name="app_ops_entry_summary"><xliff:g id="op">%1$s</xliff:g> (utilizou <xliff:g id="count">%2$s</xliff:g>)</string>
     <string name="app_ops_allowed_count">Permitido <xliff:g id="count" example="2 times">%s</xliff:g></string>
@@ -268,6 +268,8 @@
     <string name="sub_deactivate_failed">A desativação falhou.</string>
     <string name="data_usage_app_restrict_data">Dados de rede móvel</string>
     <string name="data_usage_app_restrict_data_summary">Ativar a utilização de dados de rede móvel</string>
+    <string name="data_usage_app_restrict_vpn">Dados VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Ativar a utilização de dados VPN</string>
     <string name="data_usage_app_restrict_wifi">Dados Wi\u2011Fi</string>
     <string name="data_usage_app_restrict_wifi_summary">Ativar a utilização de dados Wi\u2011Fi</string>
     <string name="unlock_scramble_pin_layout_title">Disposição aleatória</string>
@@ -296,4 +298,13 @@
     <string name="open_lockscreen_tuner">Alterar atalhos</string>
     <string name="location_mode_battery_saving_title">Poupança de bateria</string>
     <string name="location_mode_battery_saving_summary">Utilizar Wi\u2011Fi, bluetooth ou redes móveis para determinar a localização (menos precisa)</string>
+    <string name="app_notification_sound_timeout_title">Tempo mínimo entre sons de notificação</string>
+    <string name="app_notification_sound_timeout_summary_template">Permitir sons ou vibrações, apenas uma vez, a cada <xliff:g id="duration">%1$s</xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">Sem restrição</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 segundos</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 segundos</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minuto</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minutos</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minutos</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 minutos</string>
 </resources>

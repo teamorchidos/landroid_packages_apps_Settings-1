@@ -79,6 +79,7 @@
     <string name="app_ops_summaries_monitor_high_power_location">Standort mit hohem Stromverbrauch beobachten</string>
     <string name="app_ops_summaries_monitor_location">Standort beobachten</string>
     <string name="app_ops_summaries_mute_unmute_microphone">Mikrofon ein-/ausschalten</string>
+    <string name="app_ops_summaries_neighboring_cells">Benachbarte Netze</string>
     <string name="app_ops_summaries_phone_calls">Anrufe beantworten</string>
     <string name="app_ops_summaries_picture_in_picture">Bild im Bild verwenden</string>
     <string name="app_ops_summaries_play_audio">Audio wiedergeben</string>
@@ -267,6 +268,8 @@
     <string name="sub_deactivate_failed">Deaktivierung fehlgeschlagen.</string>
     <string name="data_usage_app_restrict_data">Mobilfunkdaten</string>
     <string name="data_usage_app_restrict_data_summary">Mobilfunkdatenzugriff erlauben</string>
+    <string name="data_usage_app_restrict_vpn">VPN-Daten</string>
+    <string name="data_usage_app_restrict_vpn_summary">VPN-Datennutzung erlauben</string>
     <string name="data_usage_app_restrict_wifi">WLAN-Daten</string>
     <string name="data_usage_app_restrict_wifi_summary">WLAN-Datenzugriff erlauben</string>
     <string name="unlock_scramble_pin_layout_title">Zufällige Anordnung</string>
@@ -295,4 +298,13 @@
     <string name="open_lockscreen_tuner">Verknüpfungen ändern</string>
     <string name="location_mode_battery_saving_title">Energiesparmodus</string>
     <string name="location_mode_battery_saving_summary">Nur WLAN, Bluetooth oder Mobilfunknetze zur Standortbestimmung nutzen (weniger genau)</string>
+    <string name="app_notification_sound_timeout_title">Minimale Zeit zwischen Benachrichtigungstönen</string>
+    <string name="app_notification_sound_timeout_summary_template">Töne und Vibrationen nur alle <xliff:g id="duration">%1$s</xliff:g> zulassen</string>
+    <string name="app_notification_sound_timeout_value_none">Keine Beschränkung</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 Sekunden</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 Sekunden</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 Minute</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 Minuten</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 Minuten</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 Minuten</string>
 </resources>
