@@ -64,9 +64,9 @@
         settings:allowDividerAbove="true"/>
 
     <!-- Contributors cloud -->
-    <org.lineageos.internal.lineageparts.LineagePartsPreference
+    <!-- <org.lineageos.internal.lineageparts.LineagePartsPreference
         android:order="12"
-        android:key="contributors"/>
+        android:key="contributors"/> -->
 
     <!-- Regulatory labels -->
     <Preference
