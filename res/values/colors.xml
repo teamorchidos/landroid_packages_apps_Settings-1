@@ -19,6 +19,8 @@
     <color name="red">#F00</color>
     <color name="blue">#00F</color>
 
+    <color name="accent_device_default_light">#ff4285f4</color>
+
     <color name="material_empty_color_light">#FFCED7DB</color>
 
     <color name="bluetooth_dialog_text_color">#8a000000</color>
