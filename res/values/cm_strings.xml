@@ -2,6 +2,7 @@
 <!--
      Copyright (C) 2012-2016 The CyanogenMod Project
      Copyright (C) 2017-2019 The LineageOS Project
+     Copyright (C) 2017-2020 The LightningFastRom Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -41,8 +42,8 @@
     <string name="adb_over_network_summary">Enable TCP/IP debugging over network interfaces (Wi\u2011Fi, USB networks). This setting is reset on reboot</string>
     <string name="adb_over_network_warning">WARNING: When ADB over network is enabled, your phone is open for intrusions on all connected networks!\n\nOnly use this feature when you are connected on trusted networks.\n\nDo you really want to enable this function?</string>
 
-    <!-- Device Info screen. LineageOS legal. -->
-    <string name="lineagelicense_title">LineageOS legal</string>
+    <!-- Device Info screen. LightningFastRom legal. -->
+    <string name="lineagelicense_title">LightningFastRom legal</string>
 
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Kill app back button</string>
