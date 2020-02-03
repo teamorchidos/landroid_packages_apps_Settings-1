@@ -34,6 +34,7 @@ import com.android.settings.display.TapToWakePreferenceController;
 import com.android.settings.display.ThemePreferenceController;
 import com.android.settings.display.TimeoutPreferenceController;
 import com.android.settings.display.VrDisplayPreferenceController;
+import com.android.settings.display.KCALPreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settingslib.core.AbstractPreferenceController;
@@ -50,6 +51,7 @@ public class DisplaySettings extends DashboardFragment {
     public static final String KEY_PROXIMITY_ON_WAKE = "proximity_on_wake";
 
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
+	private static final String KEY_KCAL_DISPLAY_PREF = "kcal_display_pref";
 
     @Override
     public int getMetricsCategory() {
@@ -96,6 +98,7 @@ public class DisplaySettings extends DashboardFragment {
         controllers.add(new ShowOperatorNamePreferenceController(context));
         controllers.add(new ThemePreferenceController(context));
         controllers.add(new BrightnessLevelPreferenceController(context, lifecycle));
+		controllers.add(new KCALPreferenceController(context, KEY_KCAL_DISPLAY_PREF));
         return controllers;
     }
 

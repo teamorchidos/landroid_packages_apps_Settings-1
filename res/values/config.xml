@@ -50,6 +50,10 @@
     <!-- Fully-qualified class name for the styles & wallpaper picker activity. -->
     <string name="config_styles_and_wallpaper_picker_class" translatable="false"></string>
 
+    <!-- Package name and fully-qualified class name for the wallpaper picker activity. -->
+    <string name="config_KCAL_package" translatable="false">re.codefi.savoca.kcal</string>
+    <string name="config_KCAL_class" translatable="false">re.codefi.savoca.kcal.MainActivity</string>
+
     <!-- Manufacturer backup settings to launch -->
     <string name="config_backup_settings_intent" translatable="false"></string>
 

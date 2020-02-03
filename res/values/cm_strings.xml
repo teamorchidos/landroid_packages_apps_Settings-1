@@ -123,4 +123,8 @@
     <!-- Wake on plug -->
     <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
     <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
+	
+	<!-- Wake on plug -->
+	<string name="kcal_settings_title">KCAL Setting</string>
+    <string name="kcal_settings_summary">KCal is a tool for adjusting the color, saturation, contrast, etc., of your screen, post processed. That means it happens after the image is drawn, and only affects what you visually see, so a screenshot is not affected by this. this helps you make your display show true black, and all sorts of cool color effects!</string>
 </resources>

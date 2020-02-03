@@ -7438,6 +7438,9 @@
 
     <!-- List of synonyms for the Wallpaper picker setting, used to match in settings search [CHAR LIMIT=NONE] -->
     <string name="keywords_wallpaper">background, screen, lockscreen, theme</string>
+	
+	<!-- List of synonyms for the Wallpaper picker setting, used to match in settings search [CHAR LIMIT=NONE] -->
+    <string name="keywords_KCAL">kcal, KCALControl</string>
 
     <!-- List of synonyms for the Default Assist and Voice input setting, used to match in settings search [CHAR LIMIT=NONE] -->
     <string name="keywords_assist_input">default, assistant</string>
