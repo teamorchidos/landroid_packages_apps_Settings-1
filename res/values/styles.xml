@@ -427,14 +427,6 @@
         <item name="rippleColor">?android:attr/colorControlHighlight</item>
     </style>
 
-    <style name="SearchBarStyle">
-        <item name="android:layout_margin">@dimen/search_bar_margin</item>
-        <item name="cardCornerRadius">@*android:dimen/config_dialogCornerRadius</item>
-        <item name="enforceMaterialTheme">true</item>
-        <item name="cardElevation">3dp</item>
-        <item name="shapeAppearance">@null</item>
-    </style>
-
     <style name="ConditionCardBorderlessButton"
            parent="android:Widget.DeviceDefault.Button.Borderless">
         <item name="android:textColor">?android:attr/colorAccent</item>
