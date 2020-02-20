@@ -76,6 +76,7 @@ public class SettingsHomepageActivity extends FragmentActivity {
 
         
         //final AvatarViewMixin avatarViewMixin = new AvatarViewMixin(this, avatarView);
+		if (!getSystemService(ActivityManager.class).isLowRamDevice()) {
 			avatarView = root.findViewById(R.id.account_avatar);
 			avatarView.setImageDrawable(getCircularUserIcon(context));
 			avatarView.setOnClickListener(new View.OnClickListener() {
@@ -86,6 +87,7 @@ public class SettingsHomepageActivity extends FragmentActivity {
 					startActivity(intent);
 				}
 			});
+		}
         //getLifecycle().addObserver(avatarViewMixin);
 
         if (!getSystemService(ActivityManager.class).isLowRamDevice()) {
@@ -150,7 +152,8 @@ public class SettingsHomepageActivity extends FragmentActivity {
     @Override
     public void onResume() {
         super.onResume();
+		if (!getSystemService(ActivityManager.class).isLowRamDevice()) {
             avatarView.setImageDrawable(getCircularUserIcon(getApplicationContext()));
-
+		}
     }
 }
