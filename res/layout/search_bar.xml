@@ -28,7 +28,6 @@
     android:clipToPadding="false"
 	android:elevation="@dimen/search_bar_card_elevation"
 	app:layout_scrollFlags="scroll|enterAlways">
-
   <com.google.android.material.card.MaterialCardView
 	android:id="@+id/search_bar"
 	android:layout_width="match_parent"
@@ -36,7 +35,7 @@
 	android:layout_margin="@dimen/search_bar_margin"
 	app:cardBackgroundColor="@color/search_bar_background"
 	app:cardCornerRadius="@dimen/search_bar_corner_radius">
-
+    
     <!--Do not Change Revert back to the old method unless you know how to fix 100% or you will see dead pixels on your phone display-->
     <!--<com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -71,8 +70,9 @@
 		android:paddingTop="@dimen/search_bar_avatar_top_bottom_padding"
 		android:paddingBottom="@dimen/search_bar_avatar_top_bottom_padding"
 		android:layout_width="@dimen/search_bar_avatar_width"
-		android:layout_height="match_parent"
+		android:layout_height="wrap_content"
 		android:layout_gravity="end"
+		android:scaleType="fitXY"
 		android:contentDescription="@string/search_bar_account_avatar_content_description"/>
   </com.google.android.material.card.MaterialCardView>
 </LinearLayout>
