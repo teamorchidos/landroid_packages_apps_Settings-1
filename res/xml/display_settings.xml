@@ -182,5 +182,11 @@
         android:title="@string/kcal_settings_title" 
         android:summary="@string/kcal_settings_summary"
 		settings:controller="com.android.settings.display.KCALPreferenceController" />
+		
+    <Preference
+        android:key="game_driver_dashboard"
+        android:title="@string/game_driver_dashboard_title"
+        android:summary="@string/game_driver_dashboard_summary"
+        android:fragment="com.android.settings.development.gamedriver.GameDriverDashboard" />
 
 </PreferenceScreen>
