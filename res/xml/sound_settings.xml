@@ -208,12 +208,6 @@
           android:summary="@string/vibrate_on_touch_summary"
           settings:keywords="@string/keywords_vibrate_on_touch"/>
 
-        <!-- Dock speaker plays -->
-        <DropDownPreference
-          android:key="dock_audio_media"
-          android:title="@string/dock_audio_media_title"
-          android:summary="%s"/>
-
         <!-- Boot sounds -->
         <SwitchPreference
           android:key="boot_sounds"
@@ -223,6 +217,12 @@
         <SwitchPreference
           android:key="screenshot_sounds"
           android:title="@string/screenshot_sound_title" />
+
+        <!-- Dock speaker plays -->
+        <DropDownPreference
+          android:key="dock_audio_media"
+          android:title="@string/dock_audio_media_title"
+          android:summary="%s"/>
 
         <!-- Emergency tone -->
         <DropDownPreference
