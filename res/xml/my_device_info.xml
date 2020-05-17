@@ -28,6 +28,13 @@
         android:selectable="false"
         settings:isPreferenceVisible="false"/> -->
 
+    <!-- LIghtningFastRom logo -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="lfr_logo"
+        android:order="0"
+        android:layout="@layout/lfr_logo"
+        android:selectable="false"/>
+
     <!-- Device name -->
     <com.android.settings.widget.ValidatedEditTextPreference
         android:key="device_name"
