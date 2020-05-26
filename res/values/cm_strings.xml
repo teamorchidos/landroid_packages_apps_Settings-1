@@ -144,4 +144,22 @@
 	<!-- Wake on plug -->
 	<string name="kcal_settings_title">KCAL Setting</string>
     <string name="kcal_settings_summary">KCal is a tool for adjusting the color, saturation, contrast, etc., of your screen, post processed. That means it happens after the image is drawn, and only affects what you visually see, so a screenshot is not affected by this. this helps you make your display show true black, and all sorts of cool color effects!</string>
+
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">High touch sensitivity</string>
+    <string name="high_touch_sensitivity_summary">Increase touchscreen sensitivity so it can be used while wearing gloves</string>
+
+    <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">Touchscreen hovering</string>
+    <string name="touchscreen_hovering_summary">Allows you to hover the screen like a mouse in web browsers, remote desktops, etc</string>
+
+    <!-- Update recovery -->
+    <string name="update_recovery_title">Update recovery</string>
+    <string name="update_recovery_summary">Update the built-in recovery with system updates</string>
+    <string name="update_recovery_on_warning">NOTICE: When this feature is enabled, your installed recovery will be replaced by one included with the current version of the running OS.\n\nYour recovery will be updated along with upgrades to your system, helping to ensure compatibility with future versions.\n\nWould you like to enable this feature?</string>
+    <string name="update_recovery_off_warning">WARNING: When this feature is disabled, your installed recovery will not be updated with OS upgrades.\n\nFuture OS updates may not install with outdated or custom recovery versions.\n\nDo you really want to disable this feature?</string>
+
+    <!-- Black theme for dark mode -->
+    <string name="berry_black_theme_title">Pure black</string>
+    <string name="berry_black_theme_summary">Pure black background for dark theme</string>
 </resources>
