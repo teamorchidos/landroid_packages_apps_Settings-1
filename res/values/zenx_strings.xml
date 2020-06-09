@@ -18,9 +18,6 @@
 
     <!-- ZenX OS -->
     <string name="lightningFast_title" translatable="false">Lightning Fast Rom</string>
-
-    <!-- ZenHub -->
-    <string name="zen_hub_title">Zen Hub</string>
-    <string name="zen_hub_dashboard_summary">OS Revolution starts here..</string>
+    <string name="lightningFast_slogan" translatable="false">Clean, Classes, Simple</string>
 
 </resources>
