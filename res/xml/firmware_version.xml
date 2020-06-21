@@ -19,6 +19,12 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
+    <!-- Zenx logo -->
+    <PreferenceScreen
+        android:layout="@layout/lightningFastRom_logo"
+        android:key="lightningFastRom_logo"
+        android:selectable="false" />
+
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
