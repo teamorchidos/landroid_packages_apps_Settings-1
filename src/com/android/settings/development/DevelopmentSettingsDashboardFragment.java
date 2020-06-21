@@ -17,6 +17,7 @@
 package com.android.settings.development;
 
 import android.app.Activity;
+import android.app.ActivityManager;
 import android.app.settings.SettingsEnums;
 import android.bluetooth.BluetoothA2dp;
 import android.bluetooth.BluetoothAdapter;
@@ -493,7 +494,9 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
         controllers.add(new AppsNotRespondingPreferenceController(context));
         controllers.add(new NotificationChannelWarningsPreferenceController(context));
         controllers.add(new AllowAppsOnExternalPreferenceController(context));
-        controllers.add(new ResizableActivityPreferenceController(context));
+        if (!ActivityManager.isLowRamDeviceStatic()) {
+            controllers.add(new ResizableActivityPreferenceController(context));
+		}
         controllers.add(new FreeformWindowsPreferenceController(context));
         controllers.add(new DesktopModePreferenceController(context));
         controllers.add(new ShortcutManagerThrottlingPreferenceController(context));
