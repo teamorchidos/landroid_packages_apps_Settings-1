@@ -46,6 +46,14 @@
         settings:controller="com.android.settings.deviceinfo.hardwareinfo.TotalRAMPreferenceController"
         settings:enableCopying="true"/>
 
+	<!-- Total CPU Cores -->
+    <Preference
+        android:key="hardware_info_cpu_cores"
+        android:title="@string/cpu_core_count"
+        android:summary="@string/summary_placeholder"
+        settings:controller="com.android.settings.deviceinfo.hardwareinfo.CPUCoresCountPreferenceController"
+        settings:enableCopying="true"/>
+
     <!-- SerialNumber -->
     <Preference
         android:key="hardware_info_device_serial"
