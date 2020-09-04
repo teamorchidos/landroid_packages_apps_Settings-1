@@ -31,8 +31,6 @@
 		android:fragment="com.android.settings.accounts.AccountDashboardFragment"
 		settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
 
-	<com.android.settings.TopLevelPreferenceDivider
-		android:order="-100" />
 
 		<Preference
 			android:icon="@drawable/ic_homepage_battery"
@@ -86,9 +84,6 @@
 			android:fragment="com.android.settings.location.LocationSettings"
 			settings:controller="com.android.settings.location.TopLevelLocationPreferenceController"/>
 
-	<com.android.settings.TopLevelPreferenceDivider
-		android:order="-60" />
-
 		<Preference
 			android:icon="@drawable/ic_homepage_security"
 			android:title="@string/security_settings_title"
@@ -114,9 +109,6 @@
 			android:order="-35"
 			android:fragment="com.android.settings.accessibility.AccessibilitySettings"
 			settings:controller="com.android.settings.accessibility.TopLevelAccessibilityPreferenceController"/>
-
-	<com.android.settings.TopLevelPreferenceDivider
-		android:order="-30" />
 
 	<Preference
 		android:icon="@drawable/ic_homepage_system_dashboard"
