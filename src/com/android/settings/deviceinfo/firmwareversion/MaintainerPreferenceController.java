@@ -28,7 +28,7 @@ import com.android.settings.core.BasePreferenceController;
 public class MaintainerPreferenceController extends BasePreferenceController {
 
     private static final String TAG = "MaintainerPreferenceController";
-    private static final String ROM_PROPERTY = "ro.fusion.maintainer";
+    private static final String ROM_PROPERTY = "ro.lightning.maintainer";
 
     public MaintainerPreferenceController(Context context, String key) {
         super(context, key);
