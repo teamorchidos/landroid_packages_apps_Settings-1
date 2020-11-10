@@ -471,7 +471,8 @@
         <SwitchPreference
             android:key="disable_overlays"
             android:title="@string/disable_overlays"
-            android:summary="@string/disable_overlays_summary" />
+            android:summary="@string/disable_overlays_summary"
+            android:defaultValue="0" />
 
         <ListPreference
             android:entries="@array/simulate_color_space_entries"

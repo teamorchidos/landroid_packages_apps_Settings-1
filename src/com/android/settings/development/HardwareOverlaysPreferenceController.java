@@ -71,13 +71,6 @@ public class HardwareOverlaysPreferenceController extends DeveloperOptionsPrefer
     @Override
     protected void onDeveloperOptionsSwitchDisabled() {
         super.onDeveloperOptionsSwitchDisabled();
-        final SwitchPreference switchPreference = (SwitchPreference) mPreference;
-        if (switchPreference.isChecked()) {
-            // Writing false to the preference when the setting is already off will have a
-            // side effect of turning on the preference that we wish to avoid
-            writeHardwareOverlaysSetting(false);
-            switchPreference.setChecked(false);
-        }
     }
 
     @VisibleForTesting
