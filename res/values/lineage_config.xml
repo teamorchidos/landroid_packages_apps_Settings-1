@@ -28,4 +28,8 @@
     
     <!-- Whether to show or hide sensitive info (like IMEI and Phone Number) on About phone -->
     <bool name="configShowDeviceSensitiveInfo">false</bool>
+
+    <string-array name="config_ignored_backup_transports" translatable="false">
+        <item>com.android.localtransport/.LocalTransport</item>
+    </string-array>
 </resources>
