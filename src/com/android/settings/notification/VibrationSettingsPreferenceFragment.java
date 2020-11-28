@@ -170,7 +170,7 @@ public class VibrationSettingsPreferenceFragment extends DashboardFragment
         mSettingObserver = new SettingsObserver(mH);
 
         mHasOnePlusHaptics = getResources().getBoolean(
-            com.android.internal.R.bool.config_hasOnePlusHapticMotor);
+            org.lineageos.platform.internal.R.bool.config_hasOnePlusHapticMotor);
 
         mVibrator = (Vibrator) mContext.getSystemService(Context.VIBRATOR_SERVICE);
         if (mVibrator != null && !mVibrator.hasVibrator()) {
