@@ -19,12 +19,12 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
-    <!-- Zenx logo -->
+   <!-- Orchid logo -->
     <PreferenceScreen
-        android:layout="@layout/lightningFastRom_logo"
-        android:key="lightningFastRom_logo"
-        android:selectable="false" />
-
+        android:key="orchid_logo"
+        android:enabled="false"
+        android:layout="@layout/orchid_logo" />
+  
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
