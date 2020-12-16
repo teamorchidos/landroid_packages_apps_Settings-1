@@ -22,5 +22,5 @@
         android:bottomRightRadius="0dp"
         android:topLeftRadius="1000dp"
         android:topRightRadius="0dp" />
-    <solid android:color="#001d35" />
+    <solid android:color="@color/logo_conreoller_background_color" />
 </shape>

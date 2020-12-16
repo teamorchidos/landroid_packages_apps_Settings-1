@@ -23,7 +23,7 @@
 	android:layout_marginTop="8dip"
 	android:layout_marginLeft="32dip"
 	android:layout_marginRight="16dip"
-    android:background="@drawable/logo_banner_shape"
+    android:background="@drawable/logo_conreoller_background"
     android:orientation="vertical">
 
 	<ImageView
