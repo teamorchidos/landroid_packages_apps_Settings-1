@@ -19,12 +19,12 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
-    <!-- LFL logo -->
-    <Preference
-        android:layout="@layout/logo_controller_layout"
-        android:key="logo_controller_layout"
-        android:selectable="false" />
-
+   <!-- Orchid logo -->
+    <PreferenceScreen
+        android:key="orchid_logo"
+        android:enabled="false"
+        android:layout="@layout/orchid_logo" />
+  
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
