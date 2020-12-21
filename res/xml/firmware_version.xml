@@ -31,7 +31,7 @@
         android:key="os_firmware_version"
         android:title="@string/firmware_version"
         android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
+        settings:enableCopying="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
     <!-- Lineage version -->
@@ -39,14 +39,14 @@
         android:key="lineage_version"
         android:title="@*lineageos.platform:string/lineage_version"
         android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
+        settings:enableCopying="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVersionDetailPreferenceController"/>
     
     <!-- Security patch -->
     <Preference
         android:key="security_key"
         android:title="@string/security_patch"
-        settings:enableCopying="true"
+        settings:enableCopying="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
 
     <!-- Mainline module version -->
@@ -54,7 +54,7 @@
         android:key="module_version"
         android:title="@string/module_version"
         android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
+        settings:enableCopying="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.MainlineModuleVersionPreferenceController"/>
 
     <!-- Build date -->
