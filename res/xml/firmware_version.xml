@@ -25,6 +25,7 @@
         android:enabled="false"
         android:layout="@layout/orchid_logo" />
   
+  
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
@@ -40,22 +41,6 @@
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVersionDetailPreferenceController"/>
-
-    <!-- Lineage API version -->
-    <Preference
-        android:key="lineage_api_version"
-        android:title="@*lineageos.platform:string/lineage_api_level"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageApiVersionPreferenceController"/>
-    
-   <!-- Maintainer -->
-    <Preference
-        android:key="maintainer"
-        android:title="@string/maintainer"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.MaintainerPreferenceController"/>
     
     <!-- Security patch -->
     <Preference
@@ -63,13 +48,6 @@
         android:title="@string/security_patch"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
-
-    <!-- Vendor security patch -->
-    <Preference
-        android:key="vendor_security_key"
-        android:title="@*lineageos.platform:string/lineage_vendor_security_patch"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVendorSecurityPatchLevelPreferenceController"/>
 
     <!-- Mainline module version -->
     <Preference
@@ -79,28 +57,12 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.MainlineModuleVersionPreferenceController"/>
 
-    <!-- Baseband -->
-    <Preference
-        android:key="base_band"
-        android:title="@string/baseband_version"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
-
-    <!-- Kernel -->
-    <Preference
-        android:key="kernel_version"
-        android:title="@string/kernel_version"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
-
     <!-- Build date -->
     <Preference
         android:key="os_build_date"
         android:title="@*lineageos.platform:string/build_date"
         android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
+        settings:enableCopying="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageBuildDatePreferenceController"/>
 
     <!-- Build -->
@@ -108,7 +70,7 @@
         android:key="os_build_number"
         android:title="@string/build_number"
         android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
+        settings:enableCopying="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/>
 
 </PreferenceScreen>
