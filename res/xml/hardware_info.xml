@@ -24,6 +24,10 @@
 
 	
 	
+	
+	
+	
+	
     <!-- Model -->
     <Preference
         android:key="hardware_info_device_model"
@@ -32,6 +36,7 @@
         settings:controller="com.android.settings.deviceinfo.hardwareinfo.DeviceModelPreferenceController"
         settings:enableCopying="false"/>
 
+	
 	
 	
     <!-- Platform -->
@@ -44,6 +49,7 @@
 
 	
 	
+	
     <!-- Total RAM -->
     <Preference
         android:key="hardware_info_ram"
@@ -52,6 +58,7 @@
         settings:controller="com.android.settings.deviceinfo.hardwareinfo.TotalRAMPreferenceController"
         settings:enableCopying="false"/>
 
+	
 	
 	
 	<!-- Total CPU Cores -->
@@ -64,6 +71,7 @@
 
 	
 	
+	
     <!-- SerialNumber -->
     <Preference
         android:key="hardware_info_device_serial"
@@ -72,6 +80,9 @@
         settings:controller="com.android.settings.deviceinfo.hardwareinfo.SerialNumberPreferenceController"
         settings:enableCopying="false"/>
 
+	
+	
+	
     <!-- Hardware revision -->
     <Preference
         android:key="hardware_info_device_revision"
