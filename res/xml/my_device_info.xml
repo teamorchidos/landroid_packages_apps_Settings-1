@@ -37,16 +37,6 @@
         settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
         settings:enableCopying="true"/>
 
-  
-  <!-- Android version -->
-    <Preference
-        android:key="firmware_version"
-        android:order="42"
-        android:title="@string/firmware_version"
-        android:summary="@string/summary_placeholder"
-        android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
-
     <!-- Account name -->
     <Preference
         android:key="branded_account"
@@ -62,7 +52,6 @@
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.accounts.EmergencyInfoPreferenceController"/>
 
-  
     <!-- SIM status -->
     <Preference
         android:key="sim_status"
@@ -82,7 +71,15 @@
         android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
         settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"/>
 
-    
+    <!-- Android version -->
+    <Preference
+        android:key="firmware_version"
+        android:order="42"
+        android:title="@string/firmware_version"
+        android:summary="@string/summary_placeholder"
+        android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
+
     <!--IP address -->
     <Preference
         android:key="wifi_ip_address"
@@ -93,7 +90,6 @@
         settings:allowDividerAbove="true"
         settings:enableCopying="true"/>
 
-  
     <!-- Wi-Fi MAC address -->
     <Preference
         android:key="wifi_mac_address"
@@ -103,7 +99,6 @@
         android:selectable="false"
         settings:enableCopying="true"/>
 
-  
     <!-- Bluetooth address -->
     <Preference
         android:key="bt_address"
@@ -113,15 +108,6 @@
         android:selectable="false"
         settings:enableCopying="true"/>
 
-  
-    <!-- Device FCC equipment id -->
-    <Preference
-        android:key="fcc_equipment_id"
-        android:order="52"
-        android:title="@string/fcc_equipment_id"
-        android:summary="@string/summary_placeholder"/>
-  
-  
     <!-- Device up time -->
     <Preference
         android:key="up_time"
@@ -130,5 +116,21 @@
         android:summary="@string/summary_placeholder"
         android:selectable="false"/>
 
+    <!-- Device FCC equipment id -->
+    <Preference
+        android:key="fcc_equipment_id"
+        android:order="52"
+        android:title="@string/fcc_equipment_id"
+        android:summary="@string/summary_placeholder"/>
+
+    <!-- Build number -->
+    <Preference
+        android:key="build_number"
+        android:order="53"
+        android:title="@string/build_number"
+        android:summary="@string/summary_placeholder"
+        settings:allowDividerAbove="true"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"/>
 
 </PreferenceScreen>
