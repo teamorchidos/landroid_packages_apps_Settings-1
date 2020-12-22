@@ -19,11 +19,14 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
+  
    <!-- Orchid logo -->
     <PreferenceScreen
         android:key="orchid_logo"
         android:enabled="false"
         android:layout="@layout/orchid_logo" />
+  
+  
   
   
     <!-- Android version -->
@@ -34,13 +37,6 @@
         settings:enableCopying="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
-    <!-- Lineage version -->
-    <Preference
-        android:key="lineage_version"
-        android:title="@*lineageos.platform:string/lineage_version"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="false"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVersionDetailPreferenceController"/>
     
     <!-- Security patch -->
     <Preference
@@ -49,6 +45,7 @@
         settings:enableCopying="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
 
+  
     <!-- Mainline module version -->
     <Preference
         android:key="module_version"
@@ -57,6 +54,7 @@
         settings:enableCopying="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.MainlineModuleVersionPreferenceController"/>
 
+  
     <!-- Build date -->
     <Preference
         android:key="os_build_date"
@@ -65,6 +63,7 @@
         settings:enableCopying="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageBuildDatePreferenceController"/>
 
+  
     <!-- Build -->
     <Preference
         android:key="os_build_number"
