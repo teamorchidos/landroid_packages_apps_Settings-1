@@ -28,50 +28,8 @@
         android:selectable="false"
         settings:isPreferenceVisible="false"/> -->
 
-    <!-- Device name -->
-    <com.android.settings.widget.ValidatedEditTextPreference
-        android:key="device_name"
-        android:order="1"
-        android:title="@string/my_device_info_device_name_preference_title"
-        android:summary="@string/summary_placeholder"
-        settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
-        settings:enableCopying="true"/>
-
-    <!-- Account name -->
-    <Preference
-        android:key="branded_account"
-        android:order="2"
-        android:title="@string/my_device_info_account_preference_title"
-        android:summary="@string/summary_placeholder"
-        settings:controller="com.android.settings.deviceinfo.BrandedAccountPreferenceController"/>
-
-    <Preference
-        android:key="emergency_info"
-        android:order="14"
-        android:title="@string/emergency_info_title"
-        android:summary="@string/summary_placeholder"
-        settings:controller="com.android.settings.accounts.EmergencyInfoPreferenceController"/>
-
-    <!-- SIM status -->
-    <Preference
-        android:key="sim_status"
-        android:order="18"
-        android:title="@string/sim_status_title"
-        settings:keywords="@string/keywords_sim_status"
-        android:summary="@string/summary_placeholder"
-        settings:allowDividerAbove="true"/>
-
-    <!-- Model & hardware -->
-    <Preference
-        android:key="device_model"
-        android:order="31"
-        android:title="@string/hardware_info"
-        settings:keywords="@string/keywords_model_and_hardware"
-        android:summary="@string/summary_placeholder"
-        android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
-        settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"/>
-
-    <!-- Android version -->
+    
+<!-- Android version -->
     <Preference
         android:key="firmware_version"
         android:order="42"
@@ -80,6 +38,24 @@
         android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
 
+  <!-- Device name -->
+    <com.android.settings.widget.ValidatedEditTextPreference
+        android:key="device_name"
+        android:order="1"
+        android:title="@string/my_device_info_device_name_preference_title"
+        android:summary="@string/summary_placeholder"
+        settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
+        settings:enableCopying="true"/>
+
+<!-- SIM status -->
+    <Preference
+        android:key="sim_status"
+        android:order="18"
+        android:title="@string/sim_status_title"
+        settings:keywords="@string/keywords_sim_status"
+        android:summary="@string/summary_placeholder"
+        settings:allowDividerAbove="true"/>
+    
     <!--IP address -->
     <Preference
         android:key="wifi_ip_address"
@@ -108,20 +84,38 @@
         android:selectable="false"
         settings:enableCopying="true"/>
 
-    <!-- Device up time -->
-    <Preference
-        android:key="up_time"
-        android:order="47"
-        android:title="@string/status_up_time"
-        android:summary="@string/summary_placeholder"
-        android:selectable="false"/>
-
     <!-- Device FCC equipment id -->
     <Preference
         android:key="fcc_equipment_id"
         android:order="52"
         android:title="@string/fcc_equipment_id"
         android:summary="@string/summary_placeholder"/>
+
+ <!-- Account name -->
+    <Preference
+        android:key="branded_account"
+        android:order="2"
+        android:title="@string/my_device_info_account_preference_title"
+        android:summary="@string/summary_placeholder"
+        settings:controller="com.android.settings.deviceinfo.BrandedAccountPreferenceController"/>
+
+    <Preference
+        android:key="emergency_info"
+        android:order="14"
+        android:title="@string/emergency_info_title"
+        android:summary="@string/summary_placeholder"
+        settings:controller="com.android.settings.accounts.EmergencyInfoPreferenceController"/>
+
+
+ <!-- Model & hardware -->
+    <Preference
+        android:key="device_model"
+        android:order="31"
+        android:title="@string/hardware_info"
+        settings:keywords="@string/keywords_model_and_hardware"
+        android:summary="@string/summary_placeholder"
+        android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
+        settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"/>
 
     <!-- Build number -->
     <Preference
@@ -132,5 +126,13 @@
         settings:allowDividerAbove="true"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"/>
+
+    <!-- Device up time -->
+    <Preference
+        android:key="up_time"
+        android:order="47"
+        android:title="@string/status_up_time"
+        android:summary="@string/summary_placeholder"
+        android:selectable="false"/>
 
 </PreferenceScreen>
