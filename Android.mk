@@ -21,7 +21,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_USE_AAPT2 := true
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
-LOCAL_SRC_FILES += $(call all-java-files-under, ../freedomhub/src)
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
     androidx-constraintlayout_constraintlayout \
@@ -52,15 +51,10 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     contextualcards \
     settings-logtags \
     zxing-core-1.7 \
-    org.lineageos.platform.internal
-
-LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
-    packages/apps/freedomhub/res
-
+    org.lineageos.platform.internal \
+    faceunlock_utils
+	
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
-
-LOCAL_AAPT_FLAGS := --auto-add-overlay \
-    --extra-packages com.aim.freedomhub
 
 ifneq ($(INCREMENTAL_BUILDS),)
     LOCAL_PROGUARD_ENABLED := disabled
